@@ -5,7 +5,7 @@ A four-page website covering all twenty stadiums in the 2026-27 Premier League. 
 ## Pages
 
 - `index.html` - Home: intro, league numbers, three featured grounds
-- `grounds.html` - All twenty grounds with search, region filter and sorting
+- `grounds.html` - All twenty grounds with club colours, capacity, year opened and Premier League seasons, plus search, region filter and sorting
 - `gallery.html` - Photo grid with a lightbox viewer
 - `about.html` - About, expandable FAQ and image credits
 
@@ -33,7 +33,8 @@ It downloads the lead photo of each stadium's Wikipedia article from Wikimedia C
 ## Interactive features
 
 - Dark/light mode toggle, remembered with `localStorage`
-- Search, filter and sort on the Grounds page
+- Search, region filter and sorting on the Grounds page (by capacity, age, name or Premier League seasons)
+- A club colour band and a Premier League seasons count on every stadium card
 - Gallery lightbox with keyboard controls (arrow keys, Escape)
 - Expandable FAQ
 - Collapsible navigation menu on phone-sized screens
