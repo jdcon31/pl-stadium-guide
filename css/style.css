@@ -309,6 +309,20 @@ img {
   text-align: center;
 }
 
+/* Club colour band on the Grounds cards. script.js sets the three
+   --club-* variables on each band from the stadium data. */
+.club-band {
+  margin: 0;
+  padding: 0.4rem 1.1rem;
+  border-bottom: 6px solid var(--club-secondary, var(--color-accent));
+  background-color: var(--club-primary, var(--color-brand));
+  color: var(--club-text, #ffffff);
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
 .card-body {
   padding: 1rem 1.1rem 1.2rem;
 }
@@ -327,7 +341,8 @@ img {
 
 .card-facts {
   display: flex;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
   margin: 0 0 0.75rem;
 }
 
