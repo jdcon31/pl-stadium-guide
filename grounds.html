@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Search, filter and sort all twenty Premier League stadiums.">
+  <title>Grounds | Premier League Stadium Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Site header: identical on every page -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-logo" href="index.html">PL <span>Stadium Guide</span></a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="grounds.html" aria-current="page">Grounds</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section container" aria-labelledby="grounds-heading">
+      <h1 id="grounds-heading">The grounds</h1>
+      <p class="lead">All twenty stadiums in the 2026-27 Premier League. Search by name, filter by region, or sort by size and age.</p>
+
+      <!-- Controls are wired up in js/script.js -->
+      <form class="controls" id="grounds-controls">
+        <div class="control">
+          <label for="ground-search">Search</label>
+          <input type="search" id="ground-search" placeholder="Stadium, club or city" autocomplete="off">
+        </div>
+        <div class="control">
+          <label for="ground-region">Region</label>
+          <select id="ground-region">
+            <option value="all">All regions</option>
+            <option value="London">London</option>
+            <option value="North West">North West</option>
+            <option value="North East &amp; Yorkshire">North East &amp; Yorkshire</option>
+            <option value="Midlands">Midlands</option>
+            <option value="South &amp; East">South &amp; East</option>
+          </select>
+        </div>
+        <div class="control">
+          <label for="ground-sort">Sort by</label>
+          <select id="ground-sort">
+            <option value="capacity-desc">Capacity, largest first</option>
+            <option value="capacity-asc">Capacity, smallest first</option>
+            <option value="opened-asc">Oldest first</option>
+            <option value="opened-desc">Newest first</option>
+            <option value="name-asc">Name, A to Z</option>
+          </select>
+        </div>
+      </form>
+
+      <p class="results-count" id="grounds-count" aria-live="polite"></p>
+      <div class="card-grid" id="grounds-grid"></div>
+      <noscript><p>This list needs JavaScript turned on to display.</p></noscript>
+    </section>
+  </main>
+
+  <!-- Site footer: identical on every page -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Premier League Stadium Guide, 2026-27 season. A student project by Drew Connell.</p>
+      <p>Not affiliated with the Premier League or any club. Photos from Wikimedia Commons, <a href="about.html#credits">credited here</a>.</p>
+    </div>
+  </footer>
+
+  <script src="js/credits.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

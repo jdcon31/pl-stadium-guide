@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Photos of every Premier League stadium.">
+  <title>Gallery | Premier League Stadium Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Site header: identical on every page -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-logo" href="index.html">PL <span>Stadium Guide</span></a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="grounds.html">Grounds</a></li>
+          <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section container" aria-labelledby="gallery-heading">
+      <h1 id="gallery-heading">Gallery</h1>
+      <p class="lead">Select any photo to see it larger. Use the arrow keys to move between photos and Escape to close.</p>
+      <ul class="gallery-grid" id="gallery-grid"></ul>
+      <noscript><p>The gallery needs JavaScript turned on to display.</p></noscript>
+    </section>
+
+    <!-- Lightbox: hidden until a gallery photo is selected -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+      <button class="lightbox-button lightbox-close" type="button" aria-label="Close photo viewer">&times;</button>
+      <button class="lightbox-button lightbox-prev" type="button" aria-label="Previous photo">&#8249;</button>
+      <figure class="lightbox-figure">
+        <img id="lightbox-image" src="" alt="">
+        <figcaption id="lightbox-caption"></figcaption>
+      </figure>
+      <button class="lightbox-button lightbox-next" type="button" aria-label="Next photo">&#8250;</button>
+    </div>
+  </main>
+
+  <!-- Site footer: identical on every page -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Premier League Stadium Guide, 2026-27 season. A student project by Drew Connell.</p>
+      <p>Not affiliated with the Premier League or any club. Photos from Wikimedia Commons, <a href="about.html#credits">credited here</a>.</p>
+    </div>
+  </footer>
+
+  <script src="js/credits.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

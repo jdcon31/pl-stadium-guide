@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About the Premier League Stadium Guide, with FAQ and image credits.">
+  <title>About | Premier League Stadium Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Site header: identical on every page -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-logo" href="index.html">PL <span>Stadium Guide</span></a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="grounds.html">Grounds</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section container narrow" aria-labelledby="about-heading">
+      <h1 id="about-heading">About this guide</h1>
+      <p>I watch a lot of Premier League football, and the grounds are a big part of why. A match at Craven Cottage looks nothing like a match at the Tottenham Hotspur Stadium, even on TV. Some of these places have been in use since the 1800s, and some opened last year.</p>
+      <p>This site puts all twenty in one place with the basics for each: who plays there, where it is, how many it holds and when it opened. Capacities are the figures listed for the start of the 2026-27 season. They change most years as clubs add or rebuild stands.</p>
+    </section>
+
+    <section class="section container narrow" aria-labelledby="faq-heading">
+      <h2 id="faq-heading">Questions</h2>
+      <div class="faq">
+        <div class="faq-item">
+          <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-1">Why do the stadiums change every season?</button></h3>
+          <div class="faq-answer" id="faq-1" hidden>
+            <p>The bottom three clubs are relegated each year and three come up from the Championship, so three grounds swap out. For 2026-27, Coventry City, Ipswich Town and Hull City came up.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-2">Why do capacity numbers differ between websites?</button></h3>
+          <div class="faq-answer" id="faq-2" hidden>
+            <p>Clubs report a licensed capacity to the league each season, and it moves when seats are added, removed or blocked off for building work. Older articles often quote a figure from a previous season.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-3">Which ground is the oldest?</button></h3>
+          <div class="faq-answer" id="faq-3" hidden>
+            <p>Stamford Bridge opened in 1877 as an athletics ground, before Chelsea existed. Anfield and Portman Road both date from 1884.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-4">Why are some stadiums named after companies?</button></h3>
+          <div class="faq-answer" id="faq-4" hidden>
+            <p>Clubs sell naming rights to sponsors, which is why names like Emirates, Etihad, Gtech and Vitality appear. A lot of fans still use the older name, such as Dean Court for Bournemouth's ground.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container narrow" id="credits" aria-labelledby="credits-heading">
+      <h2 id="credits-heading">Image credits</h2>
+      <p>Every photo on this site comes from Wikimedia Commons and is used under the free license listed beside it.</p>
+      <ul class="credits-list" id="credits-list"></ul>
+    </section>
+  </main>
+
+  <!-- Site footer: identical on every page -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Premier League Stadium Guide, 2026-27 season. A student project by Drew Connell.</p>
+      <p>Not affiliated with the Premier League or any club. Photos from Wikimedia Commons, <a href="about.html#credits">credited here</a>.</p>
+    </div>
+  </footer>
+
+  <script src="js/credits.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

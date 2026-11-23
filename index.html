@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A guide to all twenty Premier League stadiums for the 2026-27 season.">
+  <title>Home | Premier League Stadium Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Site header: identical on every page -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-logo" href="index.html">PL <span>Stadium Guide</span></a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="visually-hidden">Menu</span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main">
+        <ul class="nav-list">
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="grounds.html">Grounds</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </nav>
+
+      <button class="theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">2026-27 season</p>
+          <h1>Twenty grounds, one league</h1>
+          <p class="lead">From a 12,000-seat ground on the south coast to a 74,000-seat giant in Manchester, every Premier League club plays somewhere with its own history. This guide covers all twenty.</p>
+          <a class="button" href="grounds.html">Browse the grounds</a>
+        </div>
+        <figure class="hero-figure">
+          <img src="images/tottenham-hotspur-stadium.jpg" alt="Tottenham Hotspur Stadium seen from outside" width="1280" height="853">
+          <figcaption>Tottenham Hotspur Stadium, opened in 2019.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section container" aria-labelledby="numbers-heading">
+      <h2 id="numbers-heading">The league in numbers</h2>
+      <ul class="stat-row">
+        <li class="stat"><span class="stat-value">74,158</span><span class="stat-label">Biggest: Old Trafford</span></li>
+        <li class="stat"><span class="stat-value">12,357</span><span class="stat-label">Smallest: Vitality Stadium</span></li>
+        <li class="stat"><span class="stat-value">1877</span><span class="stat-label">Oldest: Stamford Bridge</span></li>
+        <li class="stat"><span class="stat-value">2025</span><span class="stat-label">Newest: Hill Dickinson Stadium</span></li>
+      </ul>
+    </section>
+
+    <section class="section container" aria-labelledby="featured-heading">
+      <h2 id="featured-heading">Three to start with</h2>
+      <div class="card-grid">
+        <article class="card">
+          <img class="card-image" src="images/old-trafford.jpg" alt="Old Trafford, home of Manchester United" loading="lazy" width="1280" height="853">
+          <div class="card-body">
+            <h3>Old Trafford</h3>
+            <p class="card-meta">Manchester United · Manchester</p>
+            <p>The biggest club ground in the country and United's home since 1910.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-image" src="images/craven-cottage.jpg" alt="Craven Cottage, home of Fulham, beside the River Thames" loading="lazy" width="1280" height="853">
+          <div class="card-body">
+            <h3>Craven Cottage</h3>
+            <p class="card-meta">Fulham · London</p>
+            <p>A riverside ground with a real cottage in one corner and a stand from 1905.</p>
+          </div>
+        </article>
+        <article class="card">
+          <img class="card-image" src="images/hill-dickinson-stadium.jpg" alt="Hill Dickinson Stadium, home of Everton, on the Liverpool waterfront" loading="lazy" width="1280" height="853">
+          <div class="card-body">
+            <h3>Hill Dickinson Stadium</h3>
+            <p class="card-meta">Everton · Liverpool</p>
+            <p>The newest ground in the league, built on a former dock on the River Mersey.</p>
+          </div>
+        </article>
+      </div>
+      <p class="section-link"><a href="grounds.html">See all twenty grounds</a></p>
+    </section>
+  </main>
+
+  <!-- Site footer: identical on every page -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Premier League Stadium Guide, 2026-27 season. A student project by Drew Connell.</p>
+      <p>Not affiliated with the Premier League or any club. Photos from Wikimedia Commons, <a href="about.html#credits">credited here</a>.</p>
+    </div>
+  </footer>
+
+  <script src="js/credits.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
