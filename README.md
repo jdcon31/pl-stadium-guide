@@ -40,4 +40,4 @@ It downloads the lead photo of each stadium's Wikipedia article from Wikimedia C
 
 ## Tools used
 
-Built with Claude (chat). See the prompt log and test report submitted with the project.
+Built by Drew Connell and Alex Thayer with Claude (chat). See the prompt log and test report submitted with the project.
